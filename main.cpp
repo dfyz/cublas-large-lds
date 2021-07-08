@@ -38,7 +38,7 @@ struct TMatrix {
 
             const auto start = uintptr_t(Ptr);
             const auto end = uintptr_t(Ptr + sizeInFloats);
-            std::cout << "Allocated a segment: [" << std::hex << start << "; " << end << ")" << std::endl;
+            std::cout << "Allocated a chunk: [" << std::hex << start << "; " << end << ")" << std::endl;
         } else {
             Ptr = storage;
         }
